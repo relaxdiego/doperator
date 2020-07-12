@@ -1,30 +1,6 @@
-### How To Use This Template
+# Doperator Charm
 
-Browse to [this template's GitHub page](https://github.com/relaxdiego/operator-charm-template)
-then click on the green "Use this template" button. Follow the steps on GitHub to create
-a freshly squeezed charm project! If you need more information before diving in, kindly
-refer to [this GitHub documentation](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template).
-
-Next, run the following command to know which places you need to customize:
-
-```
-make changes
-```
-
-Change every line of every file listed in the output until re-running the command does
-not yield anything else. Afterwards, delete this section and then proceed to the
-Developer Guide section below for more instructions. Good luck!
-
-
-# ChangeMe Charm
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam efficitur eros sed arcu
-commodo posuere. Sed nec ornare enim, ut pellentesque tellus. Nunc lacinia, dolor vel
-aliquet tincidunt, mi risus finibus mauris, vel pellentesque ante diam in leo. Sed et
-faucibus eros, vel sagittis purus. Praesent vel malesuada nulla. Quisque tincidunt mauris
-vitae finibus fermentum. Phasellus sodales magna quis feugiat lacinia. Nullam placerat
-nunc quis eros vehicula feugiat. In nunc odio, euismod nec felis nec, egestas aliquam leo.
-Cras convallis lorem quis augue vestibulum, eu blandit metus vulputate.
+It's the dopest of all the operators in the world, yo.
 
 ## Quick Start
 
@@ -37,7 +13,7 @@ make test build
 Deploy using juju
 
 ```
-juju deploy ./changeme.charm --changeme-image=changeme/changeme:v1.2.3
+juju deploy ./doperator.charm --doperator-image=grafana/grafana:latest
 ```
 
 # Developer's Guide
@@ -79,7 +55,7 @@ NOTE: For more available versions, run `pyenv install --list`
 5. Create a virtualenv for this project
 
 ```
-export charm_name=changeme
+export charm_name=doperator
 pyenv virtualenv 3.5.9 ${charm_name}-3.5.9
 pyenv local ${charm_name}-3.5.9 3.5.9 3.6.10 3.7.7
 ```
@@ -88,7 +64,7 @@ Your newly created virtualenv should now be activated if your prompt change
 to the following:
 
 ```
-(changeme-3.5.9) ubuntu@dev-18-04-2:/path/to/your/charm$
+(doperator-3.5.9) ubuntu@dev-18-04-2:/path/to/your/charm$
 ```
 
 Notice the things in parentheses that corresponds to the virtualenv you created

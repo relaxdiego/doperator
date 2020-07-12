@@ -1,15 +1,15 @@
-name: "changeme"
-display-name: "changeme"
-summary: "changeme"
+name: "doperator"
+display-name: "doperator"
+summary: "It's the dopest operator of them all"
 maintainers:
-    - "changeme <changeme@changeme.com>"
+    - "Mark S. Maglana <mark.maglana@linux.com>"
 description: |
-  Deploys and operates ChangeMe on Kubernetes
+  Deploys and operates something on Kubernetes
 tags:
     - "application"
 series:
     - "kubernetes"
 resources:
-  changeme-image:
+  doperator-image:
     type: oci-image
-    description: Container image to be used for the changeme pod
+    description: Container image to be used for the doperator pod

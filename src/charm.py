@@ -19,7 +19,7 @@ from ops.model import (
 log = logging.getLogger(__name__)
 
 
-class ChangeMeCharm(CharmBase):
+class DoperatorCharm(CharmBase):
     def __init__(self, *args):
         super().__init__(*args)
         self.framework.observe(self.on.start, self.on_start_delegator)
@@ -41,7 +41,7 @@ class ChangeMeCharm(CharmBase):
             app_name=self.app.name,
             unit_name=self.unit.name,
             unit_is_leader=self.unit.is_leader,
-            image_meta=_get_image_meta('changeme-image', self),
+            image_meta=_get_image_meta('doperator-image', self),
             set_pod_spec_func=self.model.pod.set_spec,
             set_unit_status_func=_get_unit_status_setter_func(self),
         )
@@ -158,4 +158,4 @@ class ResourceError(ModelError):
 
 
 if __name__ == "__main__":
-    main(ChangeMeCharm)
+    main(DoperatorCharm)

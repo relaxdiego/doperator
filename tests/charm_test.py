@@ -12,7 +12,7 @@ from ops.testing import Harness
 
 # Imports of your charm's objects go here
 from src.charm import (
-    ChangeMeCharm,
+    DoperatorCharm,
     ImageMeta,
     on_start_handler,
     _build_juju_pod_spec_dict,
@@ -26,10 +26,10 @@ def a_function(*args, **kwargs):
 
 # Actual tests
 
-class ChangeMeCharmTest(unittest.TestCase):
+class DoperatorCharmTest(unittest.TestCase):
 
     def setUp(self):
-        self.harness = Harness(ChangeMeCharm)
+        self.harness = Harness(DoperatorCharm)
 
     def test__init__runs_succesfully(self):
         # Setup
@@ -46,7 +46,7 @@ class ChangeMeCharmTest(unittest.TestCase):
         # Setup
         harness = self.harness
         harness.disable_hooks()
-        harness.add_oci_resource('changeme-image')
+        harness.add_oci_resource('doperator-image')
         harness.begin()
 
         # Exercise
