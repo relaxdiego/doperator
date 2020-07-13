@@ -13,7 +13,7 @@ make test build
 Deploy using juju
 
 ```
-juju deploy ./doperator.charm --doperator-image=grafana/grafana:latest
+juju deploy ./doperator.charm --resource doperator-image=grafana/grafana:latest
 ```
 
 # Developer's Guide
