@@ -4,16 +4,11 @@ It's the dopest of all the operators in the world, yo.
 
 ## Quick Start
 
-Test and build the charm:
+Test, build, then deploy the Doperator!
 
 ```
-make test build
-```
-
-Deploy using juju
-
-```
-juju deploy ./doperator.charm --resource doperator-image=grafana/grafana:latest
+make test build && \
+    juju deploy ./doperator.charm --resource doperator-image=grafana/grafana:latest
 ```
 
 # Developer's Guide
