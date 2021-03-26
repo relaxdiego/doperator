@@ -5,4 +5,4 @@
 #    make dependencies
 #
 ops==0.7.0                # via charm (setup.py)
-pyyaml==5.3.1             # via ops
+pyyaml==5.4             # via ops
